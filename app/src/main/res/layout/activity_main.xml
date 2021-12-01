@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/plusOne"
+        android:layout_width="107dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="264dp"
+        android:onClick="countUp"
+        android:text="+1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/munusOne"
+        android:layout_width="107dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="264dp"
+        android:layout_weight="1"
+        android:onClick="countDown"
+        android:text="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="28dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginBottom="280dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="192dp"
+        android:onClick="setToZero"
+        android:text="Zurücksetzen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
